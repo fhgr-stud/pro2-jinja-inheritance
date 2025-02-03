@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    Willkommen bei EvilCorp
+{% endblock %}
+
+{% block content %}
+   {{ langer_text | truncate(50) }}
+    <p>Willkommen auf unserer Homepage. Hier finden Sie alles, was Sie über uns wissen müssen.</p>
+{% endblock %}
+

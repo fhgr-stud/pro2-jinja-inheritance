@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    Hoier können Sie uns erreichen
+{% endblock %}
+
+{% block content %}
+    <p>Wir freuen uns auf Ihre Nachricht</p>
+    <form action="/kontakt" method="post">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email">
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Nachricht</label>
+            <textarea class="form-control" id="message" name="message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Absenden</button>
+    </form>
+{% endblock %}
+
+{% block footer %}
+    <p>EvilCorp GmbH</p>
+    <p>Am Beispiel 123</p>
+    <p>12345 Musterstadt</p>
+    <p>Telefon: 0123 456789</p>
+    <p>Email:
+{% endblock %}
